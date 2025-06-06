@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>灵感精灵球：AI创意孵化器</title>
+    <!-- 链接到CSS样式文件 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 网站头部 - 标题区域 -->
+    <header id="header">
+        <h1>
+            <span class="title-main">🚀 灵感精灵球</span><span class="title-break">：</span><span class="title-sub">AI创意孵化器</span>
+        </h1>
+        <p class="subtitle">✨ 每一次打开精灵球，都是一次创意的奇遇！</p>
+    </header>
+
+    <!-- 主要内容区域 -->
+    <main id="main">
+        <!-- 用户输入区域 - 灵感之源 -->
+        <section id="inputForm" class="input-section">
+            <h2>🧭 描述你的灵感种子</h2>
+            <p class="instruction">告诉我你的想法，让AI精灵为你孵化出神奇的创意宝可梦！</p>
+            <!-- 详细的用户输入表单 -->
+            <div class="form-container">
+                <!-- 自由描述区域 -->
+                <div class="form-group">
+                    <label for="freeDescription">💭 告诉我你的初始想法</label>
+                    <textarea 
+                        id="freeDescription" 
+                        name="freeDescription" 
+                        rows="4" 
+                        placeholder="告诉我你的初始想法，或者你对什么感兴趣？（可选，例如：一个解决教育问题的AI应用）">
+                    </textarea>
+                </div>
+
+                <!-- 应用领域选择 -->
+                <fieldset class="form-fieldset">
+                    <legend>🎯 选择应用领域（1-3个）：</legend>
+                    <div class="checkbox-grid">
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="appArea" value="游戏娱乐">
+                            <span class="checkmark"></span>
+                            🎮 游戏娱乐
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="appArea" value="教育学习">
+                            <span class="checkmark"></span>
+                            📚 教育学习
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="appArea" value="社交互动">
+                            <span class="checkmark"></span>
+                            👥 社交互动
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="appArea" value="效率工具">
+                            <span class="checkmark"></span>
+                            ⚡ 效率工具
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="appArea" value="健康生活">
+                            <span class="checkmark"></span>
+                            🏃 健康生活
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="appArea" value="艺术创作">
+                            <span class="checkmark"></span>
+                            🎨 艺术创作
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="appArea" value="商业智能">
+                            <span class="checkmark"></span>
+                            💼 商业智能
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="appArea" value="智能硬件/IoT">
+                            <span class="checkmark"></span>
+                            🔧 智能硬件/IoT
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="appArea" value="环保公益">
+                            <span class="checkmark"></span>
+                            🌱 环保公益
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="appArea" value="生活服务">
+                            <span class="checkmark"></span>
+                            🏠 生活服务
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="appArea" value="Web3/区块链">
+                            <span class="checkmark"></span>
+                            ⛓️ Web3/区块链
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="appArea" value="元宇宙/AR/VR">
+                            <span class="checkmark"></span>
+                            🥽 元宇宙/AR/VR
+                        </label>
+                    </div>
+                </fieldset>
+
+                <!-- 核心功能类型选择 -->
+                <fieldset class="form-fieldset">
+                    <legend>⚙️ 核心功能类型（1-3个）：</legend>
+                    <div class="checkbox-grid">
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="coreFeature" value="聊天/对话">
+                            <span class="checkmark"></span>
+                            💬 聊天/对话
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="coreFeature" value="图像/视频生成">
+                            <span class="checkmark"></span>
+                            🖼️ 图像/视频生成
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="coreFeature" value="文本/内容创作">
+                            <span class="checkmark"></span>
+                            ✍️ 文本/内容创作
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="coreFeature" value="数据分析">
+                            <span class="checkmark"></span>
+                            📊 数据分析
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="coreFeature" value="自动化">
+                            <span class="checkmark"></span>
+                            🤖 自动化
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="coreFeature" value="推荐系统">
+                            <span class="checkmark"></span>
+                            🎯 推荐系统
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="coreFeature" value="智能识别">
+                            <span class="checkmark"></span>
+                            👁️ 智能识别
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="coreFeature" value="虚拟助手">
+                            <span class="checkmark"></span>
+                            🎭 虚拟助手
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="coreFeature" value="模拟/沙盒">
+                            <span class="checkmark"></span>
+                            🏖️ 模拟/沙盒
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="coreFeature" value="任务管理">
+                            <span class="checkmark"></span>
+                            ✅ 任务管理
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="coreFeature" value="社区平台">
+                            <span class="checkmark"></span>
+                            🌐 社区平台
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="coreFeature" value="地理位置服务">
+                            <span class="checkmark"></span>
+                            📍 地理位置服务
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="coreFeature" value="AR/VR互动">
+                            <span class="checkmark"></span>
+                            👾 AR/VR互动
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="coreFeature" value="虚拟宠物">
+                            <span class="checkmark"></span>
+                            🐾 虚拟宠物
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="coreFeature" value="个性化学习">
+                            <span class="checkmark"></span>
+                            🎓 个性化学习
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="coreFeature" value="市场交易">
+                            <span class="checkmark"></span>
+                            💰 市场交易
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="coreFeature" value="安全防护">
+                            <span class="checkmark"></span>
+                            🛡️ 安全防护
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="coreFeature" value="诊断/预测">
+                            <span class="checkmark"></span>
+                            🔮 诊断/预测
+                        </label>
+                    </div>
+                </fieldset>
+
+                <!-- AI技术偏好选择 -->
+                <fieldset class="form-fieldset">
+                    <legend>🧠 AI技术偏好（1-2个）：</legend>
+                    <div class="checkbox-grid">
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="aiTech" value="自然语言处理(LLM)">
+                            <span class="checkmark"></span>
+                            🗣️ 自然语言处理(LLM)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="aiTech" value="计算机视觉(CV)">
+                            <span class="checkmark"></span>
+                            👀 计算机视觉(CV)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="aiTech" value="机器学习(ML)">
+                            <span class="checkmark"></span>
+                            🤖 机器学习(ML)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="aiTech" value="推荐算法">
+                            <span class="checkmark"></span>
+                            📈 推荐算法
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="aiTech" value="强化学习">
+                            <span class="checkmark"></span>
+                            🎯 强化学习
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="aiTech" value="生成对抗网络(GAN)">
+                            <span class="checkmark"></span>
+                            ⚔️ 生成对抗网络(GAN)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="aiTech" value="语音识别/合成">
+                            <span class="checkmark"></span>
+                            🎤 语音识别/合成
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="aiTech" value="AIoT">
+                            <span class="checkmark"></span>
+                            📱 AIoT
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="aiTech" value="机器人控制">
+                            <span class="checkmark"></span>
+                            🦾 机器人控制
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="aiTech" value="知识图谱">
+                            <span class="checkmark"></span>
+                            🕸️ 知识图谱
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="aiTech" value="情感识别">
+                            <span class="checkmark"></span>
+                            😊 情感识别
+                        </label>
+                    </div>
+                </fieldset>
+
+                <!-- 创新融合原型 -->
+                <fieldset class="form-fieldset">
+                    <legend>💡 希望融合哪些现有概念或产品？</legend>
+                    <div class="form-group">
+                        <input 
+                            type="text" 
+                            id="fusionPrototypes" 
+                            name="fusionPrototypes" 
+                            placeholder="例如：宝可梦Go+环保 / 抖音+学习"
+                            class="fusion-input">
+                        <div class="example-buttons">
+                            <button type="button" class="example-btn" data-text="宝可梦Go+环保">🎮🌱 宝可梦Go+环保</button>
+                            <button type="button" class="example-btn" data-text="抖音+在线学习">📱📚 抖音+在线学习</button>
+                            <button type="button" class="example-btn" data-text="Airbnb+技能交换">🏠🤝 Airbnb+技能交换</button>
+                            <button type="button" class="example-btn" data-text="Slack+电子宠物">💬🐾 Slack+电子宠物</button>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- 目标用户群体选择 -->
+                <fieldset class="form-fieldset">
+                    <legend>👥 目标用户群体（1-2个）：</legend>
+                    <div class="checkbox-grid">
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="targetUser" value="学生">
+                            <span class="checkmark"></span>
+                            🎓 学生
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="targetUser" value="职场人士">
+                            <span class="checkmark"></span>
+                            💼 职场人士
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="targetUser" value="家庭">
+                            <span class="checkmark"></span>
+                            👨‍👩‍👧‍👦 家庭
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="targetUser" value="设计师">
+                            <span class="checkmark"></span>
+                            🎨 设计师
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="targetUser" value="开发者">
+                            <span class="checkmark"></span>
+                            👨‍💻 开发者
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="targetUser" value="老年人">
+                            <span class="checkmark"></span>
+                            👴 老年人
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="targetUser" value="青少年">
+                            <span class="checkmark"></span>
+                            🧒 青少年
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="targetUser" value="特定兴趣群体">
+                            <span class="checkmark"></span>
+                            🎯 特定兴趣群体
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="targetUser" value="企业用户">
+                            <span class="checkmark"></span>
+                            🏢 企业用户
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="targetUser" value="非营利组织">
+                            <span class="checkmark"></span>
+                            🤝 非营利组织
+                        </label>
+                    </div>
+                </fieldset>
+
+                <!-- 项目规模选择 -->
+                <fieldset class="form-fieldset">
+                    <legend>📏 期望的开发规模：</legend>
+                    <div class="radio-group">
+                        <label class="radio-item">
+                            <input type="radio" name="projectScale" value="简单原型">
+                            <span class="radio-checkmark"></span>
+                            🥚 简单原型
+                        </label>
+                        <label class="radio-item">
+                            <input type="radio" name="projectScale" value="中等规模">
+                            <span class="radio-checkmark"></span>
+                            🐣 中等规模
+                        </label>
+                        <label class="radio-item">
+                            <input type="radio" name="projectScale" value="复杂大型项目">
+                            <span class="radio-checkmark"></span>
+                            🦅 复杂大型项目
+                        </label>
+                    </div>
+                </fieldset>
+            </div>
+        </section>
+
+        <!-- 生成按钮容器 -->
+        <section id="generateButtonContainer" class="button-section">
+            <button id="generateButton" class="pokeball-button">
+                <span class="button-text">🎯 生成灵感球！</span>
+                <span class="button-subtitle">点击释放创意能量</span>
+            </button>
+        </section>
+
+        <!-- 结果展示区域 - 灵感宝可梦诞生 -->
+        <section id="resultDisplay" class="result-section">
+            <h2>🌟 灵感宝可梦诞生！</h2>
+            <div class="result-content">
+                <p class="placeholder-text">点击上方的精灵球，让你的创意宝可梦降临吧！✨</p>
+                <!-- 这里将显示AI生成的灵感内容 -->
+            </div>
+            <!-- 保存图片按钮容器 -->
+            <div class="action-button-container">
+                <button id="saveImageButton" class="action-button">保存图片 🖼️</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- 网站底部 -->
+    <footer id="footer">
+        <p>&copy; 2025 灵感精灵球 | 用AI点亮创意之光 🌈</p>
+        <p class="footer-note">🎮 在创意的世界里，每个人都是训练师！</p>
+    </footer>
+
+    <!-- 引入html2canvas库 -->
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <!-- 链接到JavaScript脚本文件 -->
+    <script src="script.js"></script>
+</body>
+</html> 
