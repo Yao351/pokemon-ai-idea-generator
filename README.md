@@ -19,7 +19,7 @@
 - **前端**：HTML5 + CSS3 + JavaScript (ES6+)
 - **AI服务**：DeepSeek API
 - **图片生成**：html2canvas
-- **部署**：Vercel
+- **部署**：github
 
 ## 📖 使用说明
 
