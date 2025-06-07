@@ -12,7 +12,7 @@
 
 ## 🚀 在线体验
 
-[立即体验 →][(https://yao351.github.io/pokemon-ai-idea-generator/)]
+[立即体验 →][(https://yao351.github.io/pokemon-ai-idea-generator/)
 
 ## 🛠️ 技术栈
 
